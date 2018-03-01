@@ -1,7 +1,7 @@
-import compactable from "./compactable.vue";
+import distTimeline from "./distTimeline.vue";
 
 export default {
   install(Vue) {
-    Vue.component("compactable", compactable);
+    Vue.component("distTimeline", distTimeline);
   }
 };

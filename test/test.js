@@ -1,46 +1,19 @@
 import { mount } from "@vue/test-utils";
-import compactable from "../src/compactable.vue";
+import distTimeline from "../src/distTimeline.vue";
 
-describe("compatable.vue", () => {
-  const wrapper = mount(compactable, {
+describe("distTimeline.vue", () => {
+  const wrapper = mount(distTimeline, {
     propsData: {
-      column: [],
+      currentTime: 0,
       data: []
     }
   });
   it("no data to show", () => {
-    expect(wrapper.html()).toContain("没有数据");
+    // expect(wrapper.html()).toContain("没有数据");
   });
-  it("show table with required props", () => {
-    const column = [
-      [
-        {
-          title: "titleA",
-          key: "name",
-          align: "center"
-        },
-        {
-          title: "titleB",
-          key: "value",
-          align: "center"
-        }
-      ]
-    ];
-    const data = [
-      {
-        name: "a",
-        value: "b"
-      },
-      {
-        name: "a",
-        value: "b"
-      },
-      {
-        name: "a",
-        value: "b"
-      }
-    ];
-    wrapper.setProps({ column, data });
-    expect(wrapper.findAll(".dataRow")).toHaveLength(3);
+  it("show timeline with required props", () => {
+    const currentTime = 2015
+    const data = [2013, 2014];
+    wrapper.setProps({ currentTime, data });
   });
 });
