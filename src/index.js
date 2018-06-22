@@ -1,7 +1,7 @@
-import distTimeline from "./distTimeline.vue";
+import distIndexline from "./distIndexline.vue";
 
 export default {
   install(Vue) {
-    Vue.component("distTimeline", distTimeline);
+    Vue.component("distIndexline", distIndexline);
   }
 };

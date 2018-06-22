@@ -1,15 +1,14 @@
 {
-  "name": "vue-dist-timeline",
-  "version": "1.0.2",
+  "name": "vue-dist-indexline",
+  "version": "1.0.14",
   "description": "Feature & characteristcs",
-  "main": "dist/vue-distTimeline.min.js",
+  "main": "dist/vue-distIndexline.min.js",
   "directories": {
     "doc": "docs",
     "test": "test"
   },
   "dependencies": {
-    "vue-awesome-swiper": "^3.1.2",
-    "vue-test-utils": "^1.0.0-beta.11"
+    "vue-awesome-swiper": "^3.1.3"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.10",
@@ -56,12 +55,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maolf/vue-dist-timeline"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
   "homepage": ""
 }
